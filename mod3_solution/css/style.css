@@ -8,6 +8,7 @@ body {
 #navbar-head {
   background: #333;
   padding: 20px;
+  margin-top: -10px;
 }
 
 #navbarContent li {
