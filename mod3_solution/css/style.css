@@ -5,12 +5,19 @@ body {
 
 /*Header*/
 
-header nav.navbar {
+#navbar-head {
   background: #333;
+  padding: 20px;
 }
-.navbar {
-  padding: 30px;
+
+#navbarContent li {
+  background: rgba(51, 51, 51, 0.6);
 }
+
+#navbarContent {
+  padding-bottom: 20px;
+}
+
 .navbar-brand h1 {
   color: #fff;
 }
@@ -32,7 +39,7 @@ header nav.navbar {
 }
 
 #navbarContent navbar-collapse {
-  margin-top: 3rem;
+  margin-top: rem;
 }
 
 .navbar-nav {
@@ -43,18 +50,36 @@ header nav.navbar {
 
 /*Main Content*/
 .menu-tile {
-  height: 100vh;
+  height: 1000px;
   border: 2px solid #000;
   background-color: rgba(51, 51, 51, 0.6);
   margin-bottom: 2.7rem;
+}
+
+#main-content-row {
+  margin-left: auto;
+  margin-right: auto;
 }
 /*End Main Content*/
 
 /*Media Queries*/
 @media (max-width: 467px) {
+  #main-content-row {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  div.menu-tile {
+    margin: 0 auto 20px;
+  }
 }
 
 @media (min-width: 468px) and (max-width: 767px) {
+  #main-content-row {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
